@@ -16,11 +16,11 @@ note =   {Github Repository}, <br /> <space><space>
 url = {https://github.com/S1mHub/Molecular-Learning/} <br /> <space><space>
 }
 
->@Unpublished{RawatGithub,
->  author = {Sameer Rawat}, 
->  title = {Molecular-Learning}, 
->  Month = {October}, 
->  year = {2020}, 
->  note =   {Github Repository}, 
->  url = {https://github.com/S1mHub/Molecular-Learning/} 
+>@Unpublished{RawatGithub,  <br />
+>  author = {Sameer Rawat},   <br />
+>  title = {Molecular-Learning},   <br />
+>  Month = {October},   <br />
+>  year = {2020},   <br />
+>  note =   {Github Repository},  <br />
+>  url = {https://github.com/S1mHub/Molecular-Learning/}   <br />
 >}
