@@ -1,0 +1,340 @@
+Last login: Mon Dec 17 11:14:40 on ttys000
+Sameers-MBP:~ sameermac$ cd /Users/sameermac/Desktop/XSameer/
+Sameers-MBP:XSameer sameermac$ ls
+ammonia.sdf		eflornithine.sdf	indenol.sdf
+aspirine.sdf		encainide.sdf		iproclozide.sdf
+benzamidine.sdf		eprazinone.sdf		isoxsuprine.sdf
+benzquinamide.sdf	etamivan.sdf		laropiprant.sdf
+bezitramide.sdf		ethane.sdf		levopropoxyphene.sdf
+brotizolam.sdf		ethilammonia.sdf	methane.sdf
+butamben.sdf		etifoxine.sdf		metharbital.sdf
+canrenoic-acid.sdf	etilefrine.sdf		methilammonia.sdf
+cefroxadine.sdf		etoperidone.sdf		moricizine.sdf
+cephaloridine.sdf	femcamfamine.sdf	nefazodone.sdf
+chlorphenoxamine.sdf	fenproporex.sdf		nialamide.sdf
+chlorphentermine.sdf	flubendazole.sdf	pemoline.sdf
+cinoxacin.sdf		flucortolone.sdf	phenolphthalein.sdf
+cisapride.sdf		flurothyl.sdf		propane.sdf
+danthron.sdf		fominoben.sdf		rofecoxib.sdf
+dexetimide.sdf		glibornuride.sdf	sulfametopyrazine.sdf
+dexrazoxane.sdf		grepafloxacin.sdf	tacrine.sdf
+dimetacrine.sdf		ifenprodil.sdf		thiethylperazine.sdf
+diphenidol.sdf		indalpine.sdf		zimelidine.sdf
+Sameers-MBP:XSameer sameermac$ obabel *.sdf -ofpt -xfFP2
+>ammonia.pdb
+>2244   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>58049682   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>benzquinamide.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>bezitramide.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>brotizolam.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>butamben.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>canrenoic-acid.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>cefroxadine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>cephaloridine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>chlorphenoxamine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>chlorphentermine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>cinoxacin.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>cisapride.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>danthron.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>dexetimide.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>dexrazoxane.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>dimetacrine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>diphenidol.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>eflornithine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>encainide.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>eprazinone.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>etamivan.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>ethane.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>ethilammonia.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>etifoxine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>etilefrine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>etoperidone.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>femcamfamine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>fenproporex.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>flubendazole.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>flucortolone.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>flurothyl.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>fominoben.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>glibornuride.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>grepafloxacin.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>ifenprodil.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>indalpine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>indenol.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>iproclozide.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>isoxsuprine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>laropiprant.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>levopropoxyphene.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>methane.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>metharbital.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>methilammonia.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>moricizine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>nefazodone.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>nialamide.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>pemoline.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>phenolphthalein.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>propane.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>rofecoxib.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>sulfametopyrazine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>tacrine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>thiethylperazine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+>zimelidine.pdb   Tanimoto from ammonia.pdb = 0
+Possible superstructure of ammonia.pdb
+57 molecules converted
+Sameers-MBP:XSameer sameermac$ obabel *.sdf -ofpt -xfFP3
+>ammonia.pdb
+>2244   Tanimoto from ammonia.pdb = 0.181818
+Possible superstructure of ammonia.pdb
+>58049682   Tanimoto from ammonia.pdb = 0.333333
+Possible superstructure of ammonia.pdb
+>benzquinamide.pdb   Tanimoto from ammonia.pdb = 0.222222
+Possible superstructure of ammonia.pdb
+>bezitramide.pdb   Tanimoto from ammonia.pdb = 0.333333
+Possible superstructure of ammonia.pdb
+>brotizolam.pdb   Tanimoto from ammonia.pdb = 0.25
+>butamben.pdb   Tanimoto from ammonia.pdb = 0.222222
+Possible superstructure of ammonia.pdb
+>canrenoic-acid.pdb   Tanimoto from ammonia.pdb = 0.222222
+Possible superstructure of ammonia.pdb
+>cefroxadine.pdb   Tanimoto from ammonia.pdb = 0.181818
+Possible superstructure of ammonia.pdb
+>cephaloridine.pdb   Tanimoto from ammonia.pdb = 0.2
+Possible superstructure of ammonia.pdb
+>chlorphenoxamine.pdb   Tanimoto from ammonia.pdb = 0.333333
+Possible superstructure of ammonia.pdb
+>chlorphentermine.pdb   Tanimoto from ammonia.pdb = 0.5
+Possible superstructure of ammonia.pdb
+>cinoxacin.pdb   Tanimoto from ammonia.pdb = 0.2
+Possible superstructure of ammonia.pdb
+>cisapride.pdb   Tanimoto from ammonia.pdb = 0.222222
+Possible superstructure of ammonia.pdb
+>danthron.pdb   Tanimoto from ammonia.pdb = 0.25
+Possible superstructure of ammonia.pdb
+>dexetimide.pdb   Tanimoto from ammonia.pdb = 0.4
+Possible superstructure of ammonia.pdb
+>dexrazoxane.pdb   Tanimoto from ammonia.pdb = 0.5
+Possible superstructure of ammonia.pdb
+>dimetacrine.pdb   Tanimoto from ammonia.pdb = 0.4
+Possible superstructure of ammonia.pdb
+>diphenidol.pdb   Tanimoto from ammonia.pdb = 0.285714
+Possible superstructure of ammonia.pdb
+>eflornithine.pdb   Tanimoto from ammonia.pdb = 0.333333
+Possible superstructure of ammonia.pdb
+>encainide.pdb   Tanimoto from ammonia.pdb = 0.285714
+Possible superstructure of ammonia.pdb
+>eprazinone.pdb   Tanimoto from ammonia.pdb = 0.25
+Possible superstructure of ammonia.pdb
+>etamivan.pdb   Tanimoto from ammonia.pdb = 0.222222
+Possible superstructure of ammonia.pdb
+>ethane.pdb   Tanimoto from ammonia.pdb = 0
+>ethilammonia.pdb   Tanimoto from ammonia.pdb = 1
+Possible superstructure of ammonia.pdb
+>etifoxine.pdb   Tanimoto from ammonia.pdb = 0.285714
+Possible superstructure of ammonia.pdb
+>etilefrine.pdb   Tanimoto from ammonia.pdb = 0.25
+Possible superstructure of ammonia.pdb
+>etoperidone.pdb   Tanimoto from ammonia.pdb = 0.4
+Possible superstructure of ammonia.pdb
+>femcamfamine.pdb   Tanimoto from ammonia.pdb = 0.5
+Possible superstructure of ammonia.pdb
+>fenproporex.pdb   Tanimoto from ammonia.pdb = 0.4
+Possible superstructure of ammonia.pdb
+>flubendazole.pdb   Tanimoto from ammonia.pdb = 0.25
+Possible superstructure of ammonia.pdb
+>flucortolone.pdb   Tanimoto from ammonia.pdb = 0.222222
+Possible superstructure of ammonia.pdb
+>flurothyl.pdb   Tanimoto from ammonia.pdb = 0.25
+>fominoben.pdb   Tanimoto from ammonia.pdb = 0.285714
+Possible superstructure of ammonia.pdb
+>glibornuride.pdb   Tanimoto from ammonia.pdb = 0.25
+Possible superstructure of ammonia.pdb
+>grepafloxacin.pdb   Tanimoto from ammonia.pdb = 0.222222
+Possible superstructure of ammonia.pdb
+>ifenprodil.pdb   Tanimoto from ammonia.pdb = 0.25
+Possible superstructure of ammonia.pdb
+>indalpine.pdb   Tanimoto from ammonia.pdb = 0.5
+Possible superstructure of ammonia.pdb
+>indenol.pdb   Tanimoto from ammonia.pdb = 0.222222
+Possible superstructure of ammonia.pdb
+>iproclozide.pdb   Tanimoto from ammonia.pdb = 0.285714
+Possible superstructure of ammonia.pdb
+>isoxsuprine.pdb   Tanimoto from ammonia.pdb = 0.2
+Possible superstructure of ammonia.pdb
+>laropiprant.pdb   Tanimoto from ammonia.pdb = 0.222222
+Possible superstructure of ammonia.pdb
+>levopropoxyphene.pdb   Tanimoto from ammonia.pdb = 0.25
+Possible superstructure of ammonia.pdb
+>methane.pdb   Tanimoto from ammonia.pdb = 0
+>metharbital.pdb   Tanimoto from ammonia.pdb = 0.4
+Possible superstructure of ammonia.pdb
+>methilammonia.pdb   Tanimoto from ammonia.pdb = 1
+Possible superstructure of ammonia.pdb
+>moricizine.pdb   Tanimoto from ammonia.pdb = 0.25
+Possible superstructure of ammonia.pdb
+>nefazodone.pdb   Tanimoto from ammonia.pdb = 0.285714
+Possible superstructure of ammonia.pdb
+>nialamide.pdb   Tanimoto from ammonia.pdb = 0.4
+Possible superstructure of ammonia.pdb
+>pemoline.pdb   Tanimoto from ammonia.pdb = 0.285714
+Possible superstructure of ammonia.pdb
+>phenolphthalein.pdb   Tanimoto from ammonia.pdb = 0.2
+Possible superstructure of ammonia.pdb
+>propane.pdb   Tanimoto from ammonia.pdb = 0
+>rofecoxib.pdb   Tanimoto from ammonia.pdb = 0.111111
+>sulfametopyrazine.pdb   Tanimoto from ammonia.pdb = 0.285714
+Possible superstructure of ammonia.pdb
+>tacrine.pdb   Tanimoto from ammonia.pdb = 0.4
+Possible superstructure of ammonia.pdb
+>thiethylperazine.pdb   Tanimoto from ammonia.pdb = 0.333333
+Possible superstructure of ammonia.pdb
+>zimelidine.pdb   Tanimoto from ammonia.pdb = 0.5
+Possible superstructure of ammonia.pdb
+57 molecules converted
+Sameers-MBP:XSameer sameermac$ obabel *.sdf -ofpt -xfFP4
+>ammonia.pdb
+>2244   Tanimoto from ammonia.pdb = 0
+>58049682   Tanimoto from ammonia.pdb = 0
+>benzquinamide.pdb   Tanimoto from ammonia.pdb = 0.0555556
+Possible superstructure of ammonia.pdb
+>bezitramide.pdb   Tanimoto from ammonia.pdb = 0.0454545
+Possible superstructure of ammonia.pdb
+>brotizolam.pdb   Tanimoto from ammonia.pdb = 0
+>butamben.pdb   Tanimoto from ammonia.pdb = 0.0909091
+Possible superstructure of ammonia.pdb
+>canrenoic-acid.pdb   Tanimoto from ammonia.pdb = 0
+>cefroxadine.pdb   Tanimoto from ammonia.pdb = 0.0384615
+Possible superstructure of ammonia.pdb
+>cephaloridine.pdb   Tanimoto from ammonia.pdb = 0.0357143
+Possible superstructure of ammonia.pdb
+>chlorphenoxamine.pdb   Tanimoto from ammonia.pdb = 0.111111
+Possible superstructure of ammonia.pdb
+>chlorphentermine.pdb   Tanimoto from ammonia.pdb = 0.125
+Possible superstructure of ammonia.pdb
+>cinoxacin.pdb   Tanimoto from ammonia.pdb = 0
+>cisapride.pdb   Tanimoto from ammonia.pdb = 0.05
+Possible superstructure of ammonia.pdb
+>danthron.pdb   Tanimoto from ammonia.pdb = 0
+>dexetimide.pdb   Tanimoto from ammonia.pdb = 0.0769231
+Possible superstructure of ammonia.pdb
+>dexrazoxane.pdb   Tanimoto from ammonia.pdb = 0.1
+Possible superstructure of ammonia.pdb
+>dimetacrine.pdb   Tanimoto from ammonia.pdb = 0.0909091
+Possible superstructure of ammonia.pdb
+>diphenidol.pdb   Tanimoto from ammonia.pdb = 0.111111
+Possible superstructure of ammonia.pdb
+>eflornithine.pdb   Tanimoto from ammonia.pdb = 0.0909091
+Possible superstructure of ammonia.pdb
+>encainide.pdb   Tanimoto from ammonia.pdb = 0.0666667
+Possible superstructure of ammonia.pdb
+>eprazinone.pdb   Tanimoto from ammonia.pdb = 0.0666667
+Possible superstructure of ammonia.pdb
+>etamivan.pdb   Tanimoto from ammonia.pdb = 0
+>ethane.pdb   Tanimoto from ammonia.pdb = 0
+>ethilammonia.pdb   Tanimoto from ammonia.pdb = 0.25
+Possible superstructure of ammonia.pdb
+>etifoxine.pdb   Tanimoto from ammonia.pdb = 0
+>etilefrine.pdb   Tanimoto from ammonia.pdb = 0.0909091
+Possible superstructure of ammonia.pdb
+>etoperidone.pdb   Tanimoto from ammonia.pdb = 0.0588235
+Possible superstructure of ammonia.pdb
+>femcamfamine.pdb   Tanimoto from ammonia.pdb = 0.1
+Possible superstructure of ammonia.pdb
+>fenproporex.pdb   Tanimoto from ammonia.pdb = 0.1
+Possible superstructure of ammonia.pdb
+>flubendazole.pdb   Tanimoto from ammonia.pdb = 0
+>flucortolone.pdb   Tanimoto from ammonia.pdb = 0
+>flurothyl.pdb   Tanimoto from ammonia.pdb = 0
+>fominoben.pdb   Tanimoto from ammonia.pdb = 0.0666667
+Possible superstructure of ammonia.pdb
+>glibornuride.pdb   Tanimoto from ammonia.pdb = 0
+>grepafloxacin.pdb   Tanimoto from ammonia.pdb = 0.0434783
+Possible superstructure of ammonia.pdb
+>ifenprodil.pdb   Tanimoto from ammonia.pdb = 0.0714286
+Possible superstructure of ammonia.pdb
+>indalpine.pdb   Tanimoto from ammonia.pdb = 0.0909091
+Possible superstructure of ammonia.pdb
+>indenol.pdb   Tanimoto from ammonia.pdb = 0.0588235
+Possible superstructure of ammonia.pdb
+>iproclozide.pdb   Tanimoto from ammonia.pdb = 0
+>isoxsuprine.pdb   Tanimoto from ammonia.pdb = 0.0833333
+Possible superstructure of ammonia.pdb
+>laropiprant.pdb   Tanimoto from ammonia.pdb = 0
+>levopropoxyphene.pdb   Tanimoto from ammonia.pdb = 0.0769231
+Possible superstructure of ammonia.pdb
+>methane.pdb   Tanimoto from ammonia.pdb = 0
+>metharbital.pdb   Tanimoto from ammonia.pdb = 0
+>methilammonia.pdb   Tanimoto from ammonia.pdb = 0.333333
+Possible superstructure of ammonia.pdb
+>moricizine.pdb   Tanimoto from ammonia.pdb = 0.0555556
+Possible superstructure of ammonia.pdb
+>nefazodone.pdb   Tanimoto from ammonia.pdb = 0.0555556
+Possible superstructure of ammonia.pdb
+>nialamide.pdb   Tanimoto from ammonia.pdb = 0
+>pemoline.pdb   Tanimoto from ammonia.pdb = 0
+>phenolphthalein.pdb   Tanimoto from ammonia.pdb = 0
+>propane.pdb   Tanimoto from ammonia.pdb = 0
+>rofecoxib.pdb   Tanimoto from ammonia.pdb = 0
+>sulfametopyrazine.pdb   Tanimoto from ammonia.pdb = 0.0666667
+Possible superstructure of ammonia.pdb
+>tacrine.pdb   Tanimoto from ammonia.pdb = 0.1
+Possible superstructure of ammonia.pdb
+>thiethylperazine.pdb   Tanimoto from ammonia.pdb = 0.0769231
+Possible superstructure of ammonia.pdb
+>zimelidine.pdb   Tanimoto from ammonia.pdb = 0.0909091
+Possible superstructure of ammonia.pdb
+57 molecules converted
+Sameers-MBP:XSameer sameermac$ 
