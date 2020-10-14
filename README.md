@@ -15,12 +15,3 @@ To see only the code, the folder TD_Cluster_Code contains all the relevant code.
 &nbsp;&nbsp;&nbsp;&nbsp; note =   {Github Repository}, <br /> <space><space>
 &nbsp;&nbsp;&nbsp;&nbsp; url = {https://github.com/S1mHub/Molecular-Learning/} <br /> <space><space>
 }
-
->@Unpublished{RawatGithub,  <br />
->  author = {Sameer Rawat},   <br />
->  title = {Molecular-Learning},   <br />
->  Month = {October},   <br />
->  year = {2020},   <br />
->  note =   {Github Repository},  <br />
->  url = {https://github.com/S1mHub/Molecular-Learning/}   <br />
->}
