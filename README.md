@@ -8,10 +8,10 @@ In addition to these components, there is some select research papers retained o
 To see only the code, the folder TD_Cluster_Code contains all the relevant code. If you use any of the code from TD_Cluster_Code, please consider citing this GitHub repository:
 
 @Unpublished{RawatGithub, <br />
-    author = {Sameer Rawat}, <br />
-    title =	 {Molecular-Learning}, <br />
-    Month =	 {October}, <br />
-    year =	 {2020}, <br />
-    note =   {Github Repository}, <br />
-    url = {https://github.com/S1mHub/Molecular-Learning/} <br />
+<space><space> author = {Sameer Rawat}, <br />
+<space><space> title = {Molecular-Learning}, <br />
+<space><space> Month = {October}, <br />
+<space><space> year = {2020}, <br />
+<space><space> note =   {Github Repository}, <br />
+<space><space> url = {https://github.com/S1mHub/Molecular-Learning/} <br />
 }
