@@ -1,0 +1,520 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'Menlo'; font-size:12pt; font-weight:400; font-style:normal;">
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">928</span><span style=" color:#000080;">]:</span> Choke = []</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> for i in range(MSL):</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span>     if ClusterJoin[i][0] == 8:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span>         Choke.append(ClusterJoin[i])</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> #Filter by further criteria - see below for individual functions</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte1 = Choke[0][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 1:', Chem.Descriptors.ExactMolWt(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 1:', Chem.Descriptors.MolLogP(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 1:', Chem.Descriptors.TPSA(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 1:', Chem.rdMolDescriptors.CalcNumHBD(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 1:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 1:', Chem.rdMolDescriptors.CalcNumHBA(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 1:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 1:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte2 = Choke[2][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 2:', Chem.Descriptors.ExactMolWt(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 2:', Chem.Descriptors.MolLogP(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 2:', Chem.Descriptors.TPSA(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 2:', Chem.rdMolDescriptors.CalcNumHBD(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 2:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 2:', Chem.rdMolDescriptors.CalcNumHBA(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 2:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 2:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte3 = Choke[4][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 3:', Chem.Descriptors.ExactMolWt(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 3:', Chem.Descriptors.MolLogP(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 3:', Chem.Descriptors.TPSA(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 3:', Chem.rdMolDescriptors.CalcNumHBD(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 3:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 3:', Chem.rdMolDescriptors.CalcNumHBA(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 3:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 3:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte3</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte4 = Choke[6][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 4:', Chem.Descriptors.ExactMolWt(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 4:', Chem.Descriptors.MolLogP(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 4:', Chem.Descriptors.TPSA(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 4:', Chem.rdMolDescriptors.CalcNumHBD(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 4:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 4:', Chem.rdMolDescriptors.CalcNumHBA(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 4:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 4:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte4</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte5 = Choke[int(np.floor(len(Choke)/2) - 2)][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 5:', Chem.Descriptors.ExactMolWt(Analyte5))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 5:', Chem.Descriptors.MolLogP(Analyte5))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 5:', Chem.Descriptors.TPSA(Analyte5))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 5:', Chem.rdMolDescriptors.CalcNumHBD(Analyte5))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 5:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte5))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 5:', Chem.rdMolDescriptors.CalcNumHBA(Analyte5))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 5:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte5))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 5:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte5))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte5</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte6 = Choke[int(len(Choke)/2)][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 6:', Chem.Descriptors.ExactMolWt(Analyte6))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 6:', Chem.Descriptors.MolLogP(Analyte6))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 6:', Chem.Descriptors.TPSA(Analyte6))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 6:', Chem.rdMolDescriptors.CalcNumHBD(Analyte6))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 6:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte6))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 6:', Chem.rdMolDescriptors.CalcNumHBA(Analyte6))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 6:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte6))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 6:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte6))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte6</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte7 = Choke[int(len(Choke)/2 + 2)][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 7:', Chem.Descriptors.ExactMolWt(Analyte7))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 7:', Chem.Descriptors.MolLogP(Analyte7))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 7:', Chem.Descriptors.TPSA(Analyte7))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 7:', Chem.rdMolDescriptors.CalcNumHBD(Analyte7))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 7:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte7))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 7:', Chem.rdMolDescriptors.CalcNumHBA(Analyte7))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 7:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte7))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 7:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte7))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte7</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte8 = Choke[-4][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 8:', Chem.Descriptors.ExactMolWt(Analyte8))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 8:', Chem.Descriptors.MolLogP(Analyte8))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 8:', Chem.Descriptors.TPSA(Analyte8))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 8:', Chem.rdMolDescriptors.CalcNumHBD(Analyte8))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 8:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte8))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 8:', Chem.rdMolDescriptors.CalcNumHBA(Analyte8))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 8:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte8))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 8:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte8))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte8</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte9 = Choke[-2][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 9:', Chem.Descriptors.ExactMolWt(Analyte9))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 9:', Chem.Descriptors.MolLogP(Analyte9))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 9:', Chem.Descriptors.TPSA(Analyte9))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 9:', Chem.rdMolDescriptors.CalcNumHBD(Analyte9))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 9:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte9))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 9:', Chem.rdMolDescriptors.CalcNumHBA(Analyte9))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 9:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte9))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 9:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte9))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte9</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte10 = Choke[-1][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 10:', Chem.Descriptors.ExactMolWt(Analyte10))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 10:', Chem.Descriptors.MolLogP(Analyte10))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 10:', Chem.Descriptors.TPSA(Analyte10))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 10:', Chem.rdMolDescriptors.CalcNumHBD(Analyte10))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 10:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte10))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 10:', Chem.rdMolDescriptors.CalcNumHBA(Analyte10))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 10:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte10))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 10:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte10))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte10</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> AnalyteList = (Analyte1,Analyte2,Analyte3,Analyte4,Analyte5,Analyte6,Analyte7,Analyte8,Analyte9,Analyte10)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> ShaperFull = np.shape(Choke)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> ShaperTarget = ShaperFull[0]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('The given cluster has', ShaperTarget, 'molecules')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Chem.Draw.MolsToGridImage(AnalyteList)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Molecular Weight of Analyte 1: 290.21946028018</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Log P Value of Analyte 1: 0.2654000000000025</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Polar Surface Area of Analyte 1: 52.60000000000001</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Donors of Analyte 1: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Donors of Analyte 1: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Acceptors of Analyte 1: 4</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Acceptors of Analyte 1: 6</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Number of Rotatable Bonds of Analyte 1: 9</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Molecular Weight of Analyte 2: 330.036066958</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Log P Value of Analyte 2: 2.1218000000000004</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Polar Surface Area of Analyte 2: 71.06</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Donors of Analyte 2: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Donors of Analyte 2: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Acceptors of Analyte 2: 8</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Acceptors of Analyte 2: 6</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Number of Rotatable Bonds of Analyte 2: 9</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#4682b4;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#4682b4;">  File </span><span style=" color:#006400;">&quot;&lt;ipython-input-928-6806e1fa1a7a&gt;&quot;</span><span style=" color:#4682b4;">, line </span><span style=" color:#006400;">29</span><span style=" color:#4682b4;">, in </span><span style=" color:#9400d3;">&lt;module&gt;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">    Analyte3 = Choke[4][1]</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">IndexError:</span> list index out of range</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">929</span><span style=" color:#000080;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">929</span><span style=" color:#000080;">]:</span> ShaperFull = np.shape(Choke)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> ShaperTarget = ShaperFull[0]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">930</span><span style=" color:#000080;">]:</span> print('The given cluster has', ShaperTarget, 'molecules')</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">The given cluster has 4 molecules</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">930</span><span style=" color:#000080;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">931</span><span style=" color:#000080;">]:</span> Analyte1 = Choke[0][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 1:', Chem.Descriptors.ExactMolWt(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 1:', Chem.Descriptors.MolLogP(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 1:', Chem.Descriptors.TPSA(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 1:', Chem.rdMolDescriptors.CalcNumHBD(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 1:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 1:', Chem.rdMolDescriptors.CalcNumHBA(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 1:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 1:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte2 = Choke[1][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 2:', Chem.Descriptors.ExactMolWt(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 2:', Chem.Descriptors.MolLogP(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 2:', Chem.Descriptors.TPSA(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 2:', Chem.rdMolDescriptors.CalcNumHBD(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 2:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 2:', Chem.rdMolDescriptors.CalcNumHBA(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 2:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 2:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte3 = Choke[2][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 3:', Chem.Descriptors.ExactMolWt(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 3:', Chem.Descriptors.MolLogP(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 3:', Chem.Descriptors.TPSA(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 3:', Chem.rdMolDescriptors.CalcNumHBD(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 3:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 3:', Chem.rdMolDescriptors.CalcNumHBA(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 3:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 3:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte3))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte3</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte4 = Choke[3][1]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Molecular Weight of Analyte 4:', Chem.Descriptors.ExactMolWt(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Log P Value of Analyte 4:', Chem.Descriptors.MolLogP(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Polar Surface Area of Analyte 4:', Chem.Descriptors.TPSA(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Donors of Analyte 4:', Chem.rdMolDescriptors.CalcNumHBD(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Donors of Analyte 4:', Chem.rdMolDescriptors.CalcNumLipinskiHBD(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('H-bond Acceptors of Analyte 4:', Chem.rdMolDescriptors.CalcNumHBA(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('(Lipinski) H-bond Acceptors of Analyte 4:', Chem.rdMolDescriptors.CalcNumLipinskiHBA(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> print('Number of Rotatable Bonds of Analyte 4:', Chem.rdMolDescriptors.CalcNumRotatableBonds(Analyte4))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Analyte4</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> AnalyteList = (Analyte1,Analyte2,Analyte3,Analyte4)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> Chem.Draw.MolsToGridImage(AnalyteList)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">     ...:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Molecular Weight of Analyte 1: 290.21946028018</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Log P Value of Analyte 1: 0.2654000000000025</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Polar Surface Area of Analyte 1: 52.60000000000001</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Donors of Analyte 1: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Donors of Analyte 1: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Acceptors of Analyte 1: 4</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Acceptors of Analyte 1: 6</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Number of Rotatable Bonds of Analyte 1: 9</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Molecular Weight of Analyte 2: 125.971809826</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Log P Value of Analyte 2: -0.1579000000000001</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Polar Surface Area of Analyte 2: 94.83</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Donors of Analyte 2: 3</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Donors of Analyte 2: 3</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Acceptors of Analyte 2: 2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Acceptors of Analyte 2: 5</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Number of Rotatable Bonds of Analyte 2: 1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Molecular Weight of Analyte 3: 330.036066958</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Log P Value of Analyte 3: 2.1218000000000004</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Polar Surface Area of Analyte 3: 71.06</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Donors of Analyte 3: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Donors of Analyte 3: 0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Acceptors of Analyte 3: 8</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Acceptors of Analyte 3: 6</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Number of Rotatable Bonds of Analyte 3: 9</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Molecular Weight of Analyte 4: 218.151809184</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Log P Value of Analyte 4: 1.2433</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Polar Surface Area of Analyte 4: 66.76</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Donors of Analyte 4: 2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Donors of Analyte 4: 2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">H-bond Acceptors of Analyte 4: 4</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(Lipinski) H-bond Acceptors of Analyte 4: 4</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Number of Rotatable Bonds of Analyte 4: 9</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#8b0000;">Out[</span><span style=" font-weight:600; color:#8b0000;">931</span><span style=" color:#8b0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+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
+4cOHnzp1yt3d3dPTs7Cw0CEtHzgQk5Iiv/02qyZPXrdORbRlS3WZBX31w5Gf
+wFOn9NlnVUQHD9aqf1uePHkyIiLCZrOJSHBw8Pbt2887oKioKCEhoXu3bnk9
+e6qIduqk8fFaXHyRtoqKNDZWPT1VRDt31rVrq1JAUlLSwIEDyyMwJiYmOzvb
+brfHx8c3adJERFq2bLm8ppui/fDDDyEhIda78/Dw8Pb2fuihh0pdb9OsXbs0
+MFCffvrsI9nZ+txzetVVZScew4bpV1+xstTxlj06bNmjw5xdBSpVUlKSlJQU
+EhLSoUOHCRMmrFixwiHNvvbaayISGRmZmpoqIj169HBIs6q6e/cfUlLk2LF3
+a/j8e+7Rf/xDHZr6rq9WQRgVpatW6YkTGhenW7borFm6f79++WVNmlq9enXb
+tm1FpFGjRuVdw6KiooULF3bs2NFKqfl33qnvvaeV9xrLbNtmbeDywogRERER
+eZV3DZOSkgYMGHBeBFY8ID09vfy6rpCQkCNHKrkc9WK2bNly5513WhHo6+s7
+ffr00NBQq6narhJSzcjIiIqKioyMHDt27ObNm2vTVLmKC19OndKIiLIIHD5c
+v/rKIa+Ai7G2vILr+fnnnx999NGWLVtaH1vr2ic3N7cXXnjBXusdWB544AER
+iYuLW7p0qYjcdVeNRjIv5uefe6ekSF7edzV8/rZt+vjj+vjj1ejNXPlq/gnM
+ydGZMzU8XDMydM4c3bdP587V2qwizM7OLu8a3nTTTXPnzu3SpYv1n2DPnj0T
+EhIuMXB6vsLC43PmWP25rl27fvPN+dslJCUl3XTTTVbjV1999YURWM7qGlq3
+aGjRosWyZcsu++KpqanlvUBfX9+oqKiDZzaM+Oijj1q3bl0+FFyDruHevXsj
+IyO9vLysLqb1v7NmzarluM2F5zTff6+jRlWxU41aIAhdTHZ2dkJCwujRo62P
+sNVdi42NPXToUGxsrJubm3VafIkz7KoYPny4iHz22WcxMTEiMmtWjUYyL1Ba
+Wrpx403ff9+8pKSmlwNW3AT8lVf0scd04UJdv16zshxSoWuqyScwJ0djYzUw
+UMeP17Q0ffBBR637VVVdvXp1u3btRKRx48Yi0qtXr+pFYAWpqam/+93vRMRm
+s0VEROTm5uoFERgbG5ufn3/Zpvbu3Tt69GjrWePGjTtw4EBlr1gegY0bN64Y
+geWOHz8+adIkEenbsmXR73+vaWlVfDv79u2Liopq1KiRdVoaEhKybdu26Oho
+60S1V69emzZtqmJTF3LsOQ2qgSB0GSkpKREREdYJtIj4+/uHhoaety7sk08+
+sRZ+9+7duzYbg1g7NmdkZPzhD38QkYSEhFqXr6q6a9cuqeU1WhU3Ab/xxrJx
+IetPUJCOHBn3l7/Mnz8/KSlp//79DqnZFVTvE5iVpTExGhBQ9tdi7YTw/PNl
+QViL1ZrnyM7Onjt37ltvvbV06dJaTqcVFRXFxMRYF7C3adOmV69e1n/irVq1
+evXVV6t1GZzVNfT39xeRwMDA+Pj4ir/dtm3bZSOwov/973/7x4xREfX11Vdf
+vcytdtLT9U9/mjlypDU+ExoaWnGR7caNG6335ebmFhERUZVcrygrS595RsPD
+HX9OgyohCJ3twIEDsbGx5eNPItKvX7/4+PjK+nzbt2/v1q2biLx76601GzPJ
+z89v3769t7f3559/bk39fPddTUcyz7Vq1SoRueWWW2reRFLS2aX4H32kzz+v
+kyZpv37auLH1vd+mVavyvyh/f/8bb7wxLCws6wrvL1b1E5iVlfXii3uaNi2L
+wNGj9bzhxttuUxH9+mvHl1h7zz///DXXXNO0aVNPT8+mTZs++uijNb4S/MCB
+A7efuXmm1TW8MAIPHTpUpbZOnjw7ERccrBesElJV3bNHp061lv8cbNUqfPLk
+i04uFhUVxcbGWnnfuXPn5OTkqry+1bO3Tmuuu061wjkN6g9B6Dx79+699dZb
+rTEVEWnbtu3TTz+9e/fuyz7xxIkTfwsPV29v9fTUN96o+isWFBQsW7asfNy1
+ZcuWNpvtlltuqWxqprpeeuklEYmKiqpVK+VL8Suy23XvXv3ss1dfeSUiImLY
+sGHNm5dtW+Ph4eGoJa/OcvlPYHZ2dmxsbEBAQL9+Y60VoRddDmOtFx01yvEl
+1t6YMWNE5B//+Md9990nIrNnz65Na3a7/a233mratGn5+K2I+Pn5zZo16+jR
+o9Vu7qOPtHXrsnu3vv762cf37tWoKPX2LrsgJCREL3ep5bZt2/r27VveNbzE
+HMbx4/rUU+rvX5bCY8bounVnf/vppzpkiO7dW+23gpogCJ2noKAgICDA29t7
+3Lhxy5YtK77oWvTK2O0aE1N2p8n77rvsXML+DRvCw8PLx139/PymTZs2ffp0
+a9Jx4sSJtZx0tEyZMkVEFixYUPumquLYsWNff/31+++/Xz8vV3cu9Qk8fvz4
+k08+aQ0GisjYsWM3bKj0H/vkSQ0MVBGtWm+kXlmTghs2bJgxY4a1Uqv2bR48
+ePDOO++85557mjRpEhUVdfjw4Zq3ZXUNbTZ95JGz67XGji27i+H991d9HtHq
+GlpLaTp16vTVBcs9jx079pe//GXMmJVWBI4dq+vXn99IaKiKaGRkzd8QqmH9
+y7r+ZWcXYa41a9bUasfzpUvLbrsdHHzxmygdPKhxcXr99ccDA60Jfmvc1Vqy
+oBUmHfv06ZOenl7zSlRV1boY+sIPPi6t0iDcsWOHtVRSRG699db1F35fXiAm
+pmzU1NVYA/rbt2+3LmD417/+5aiWi4qKcnIctFn711+fs3Xqt9/qlClahVGa
+C6Wmpt5www3nrRI6evTorFmzrH9Tb2//iRNPVzanm5amHh7q6am1/lSa5Ikn
+VFWPHtVXXjm7AP1//9O1a8/5k/617l179s/nj+mXT2niNM1KO+fx9K/Pf+L3
+3589Sar4WnC677/Xdu1URAcOPPtgYaF++KGOG6fu7mUDL61bL5k3b+fFdm/a
+uXNnz549RaRZs2Zr1qypcSF5eXlWv6VW5+VGqjQI7XZ7//79R48evaHKa2DK
+O4WuNlNoLdA6dOiQNb23cuVKZ1dUiYrrtWqnsLDwqaeeKp81vO+++8rHZG67
+7baNGzde+un33acita/CJJGRumKFLlqks2efXYD+xz+es+hORJ9pXjYWav1Z
+FqIn9ujXczTlH+c8/kzz8584efLZk6SKrwVXkJmpY8bokiVnT1YmTy77h/Py
+0gkT9OOPL30BdHZ29h133GHNt8XGxlb39VNSUqKioq666io/Pz8fH5+YmJja
+X+loFA+phM1m++qrr8q/PauiaVOJipKFC/ctXvzfoUMfrvoT65p1IySX3fb6
+rJAQiYoSPz+p9d1Zvby8nnvuuZCQkPDw8O+///7YsWN5eXmjR4+eM2dO+R4C
+l/DMM7J0qbz9tjzxhLRvX8tazGCzSZs24uMj+/aJh0fZXvBNmsiwYecc1t5P
+3HLP/l8PL0n/StoEi1+QtK9wpN1PhuWe80RPz7P7y4ucfS24ghYt5LPPZOpU
+WbBAvL0lLEz+8AfZvFnCwiQ8XFq0uGwD/v7+K1eufPbZZ//6178+8cQTu3fv
+fuONN6w5jks4fPjw4sWLFy1atP3MNtldunTZs2fPs88+u3PnzrffftvHx8cB
+784Ejs3VrKzT1k2X1lVcfeFUBQUFIuLt7a2qvXv3FpGtW7c6u6jKXXS9Vi0U
+FRW9//77K1asqO767EmTVEQffviEA4tpyB58UFU1M1Nnzz5nAfqlfTJDtWpn
+7hXbrPhacB2OGNFZunSpr6+viAwaNKiy9eflu76V39k0KCgoKioqNTVVVT/+
++GNrKZ9DJh0N4fjlak8//bSIjD3vnhTOU3zwYNYNN+y75RZV3XLnnV+OGHGc
+BZFVsH27fdiwPzVp0iQjI8PZtVyBqnJC88kMfcFPt/1Lt/1LX/DTT2Y4oE04
+UdVPgC5p69atHTp0EJHWrVuft0vGjh07oqOjK+76Nnr06GXLlhWd+x/Gr7/+
+2qNHDxFp3rz5lzXb9NJizHZrjg/CEydOWGOPF25s5hy//KIi2r27qpZdMXCC
+Xk6V3HvvvSIyffp0ZxfSQCVO09miW97ULW/qbNHEac4uCLXmoJOVo0ePWveD
+8/b2XrRoUWW7vl1iUUx2dra1JKJmk46qqseOnbPdWoNW8xvzViYgIOChhx4S
+keeff97hjdfEyZMiIgEBUloqubni5iZnLgjBpT399NNubm4LFy787bffnF0L
+cCVwd5czw5W10bx589WrV0dGRhYWFoaHh7ds2XLy5MlffPGFv79/RETExo0b
+t2/fXrFreCF/f/8VK1ZER0eXlJQ88cQTkZGRRUVFVXptu12++EImTpRrrpET
+J87OTKs65LbnrsnxQSgijzzySEBAwOrVq9etW1cX7VdPeRBmZ4uq+PuLW528
+64anZ8+eEydOLCwsnDdvnrNrAczi5eX1z3/+Mz4+fsyYMY0aNbKuPjxw4EB8
+fHxV1ruJiLu7e2xs7Pvvv+/r6/vmm2/efPPNhw8fvtQTdu6UWbOkbVu55Rb5
+4AOx26VNG4mKkr/8RUaNkrlzJTi4wa7PqqOe5nPPPTdjxoxL77dZT5YsURH9
+wx90924V0Q4dnF3QleSXX35xc3Pz9vZuSBvsugqGRlEFdru9ljt5bt26tX37
+9iLSunXrCxfN5ebmvvPOO6vDw89eq9Ojh86bp9ZSHWuwt6BAu3Uru2evi8x5
+OVRd9Y2eeuqp+fPnt6qwPavTlPcIy39AlfXs2TMkJMTNzW3Tpk3OrqXByW0u
+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
+uOI4OggtR4/mz5rl5+NjfWU/+eST1rd/YmJi27ZtrVG+iIiIkydPVqvV3377
+LSIiwppQbNKkydNPP/3SSy+VL2uMjY2tybIa1bS0tAkTJlgB4+/vb/3QoUOH
+xNpdEGIFjIhYb7l///7fffddbRq0rF+/fvDgwbNnz540aZIDLzLZtm1benp6
+QUGBoxoEgCtF3QShqqru2rVr4sSJVq40b978uuuuK19OsnXr1ho3+8MPP/z+
+97+3mrIa/+Mf/1hx5qxmZsyY0apVqz59+vj6+nbt2nX58uW1bNDy+eefr1+/
+fvHixdUaCwUA1BubOnQvygtt3rz58ccfX7t2bY8ePTIzM2NiYmbMmGENG9bG
+mjVrVqxYcdVVV40cOXLkyJG1r3PEiBHJycmrVq364osvXnvttRdffPGxxx6r
+fbMAABdX57dhuvHGG7/66qvk5OTWrVsHBgY2a9bMIc2OGjVq1KhRDmnKYk1b
+ent7W2OtbPwNAIaop/sRDh8+vH5eqMbKtzk1eeNvADCQa2267UTl+Wf9QI8Q
+AAxBEJYp7xFyc2AAMApBWKa8I8jNgQHAKPU0R+j63mjR4s2ePUttNo/GjR9s
+27bY3d3ZFQEA6gNBWCagoEC2b5e8PPHwkP37PXNynF0RAKA+MDR6hqeniEhR
+kXh5lf0AADAAQXiGlX/FxWcTEQBgAILwjPKOYHkiAgAMQBCecV4Q0iMEADMQ
+hGdYI6LFxeLrK4GB4u3t7IIAAPWhzjfdBgDAlXH5RAWpqbJkiYjIkCFy++3O
+rgYAUB8Iwgrmz5cFC8TbW8LCCEIAMARzhBV4eJStlGnc2NmlAADqCT3CCkJC
+JCpK/PzEoXc6BAC4MhbLnKu0VOz2shWkAAADEIQAAKMxRwgAMBpBCAAwGkEI
+ADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEI
+ADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEI
+ADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEI
+ADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEI
+ADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEI
+ADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEI
+ADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEIADAaQQgAMBpBCAAwGkEI
+ADAaQQgAMBpBCAAwGkEIADAaQQgAMNr/B2Wgzpp+dRdlAAAAAElFTkSuQmCC
+
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">932</span><span style=" color:#000080;">]:</span> </p></body></html>
